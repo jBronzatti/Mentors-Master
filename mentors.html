@@ -1,0 +1,57 @@
+<DOCTYPE html>
+    <html lang="pt">
+
+    <head>
+        <script type="text/javascript" scr="jQuery.min.js"> </script>
+        <meta charset="utf-8">
+        <title>Mentors</title>
+        <link rel="icon" href="icone.png" />
+        <link href="mentors.css" rel="stylesheet">
+        <meta name="Description" content="Site Mentors feito por JRE Desenvolvimentos">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="theme-color" content="#141c91">
+    </head>
+
+    <body id="body">
+        <a onclick="cima()"><img id="top" src="top.png"></a>
+        <div id="tit">
+            <h2 id="t2">Bem vindo ao</h2>
+            <h1 id="t1">Mentors</h1>
+            <h3 id="t3">Aprender com os melhores mentores</h3>
+            <h3 id="tcta"><a id="cta" onclick="produtos()"><img src="cta.png"></a></h3>
+            <a onclick="baixo()"><img id="btb" src="bot.png"></a>
+        </div>
+        <div id="dv1">
+            <p><img src="iconeg.png">
+                Professores Qualificados<br>
+                Temos professores com mestrados, doutorados e especializações<br></p>
+
+            <br><br>
+
+            <p><img src="cont.png">
+                Na Mentors você encontra cursos de <br>
+                Contabilidade, gerenciamentos de negócios entre outros</p>
+        </div>
+    </body>
+    <script>
+        $ (document).ready(function () {
+            alert('jQuery Loaded!');
+        });
+        $(function animacao1() {
+            $("div").hide(5000).show(5000).delay(2000);
+        });
+        function cima() {
+            document.getElementById("tit").scrollIntoView();
+        }
+
+        function baixo() {
+            document.getElementById("dv1").scrollIntoView();
+
+        }
+
+        function produtos() {
+            console.log("produtos");
+        }
+    </script>
+
+    </html>
